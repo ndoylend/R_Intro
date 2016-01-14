@@ -1,0 +1,101 @@
+@import url(https://fonts.googleapis.com/css?family=Crete+Round:400);
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700&effect=3d);
+
+/* Limit image width and height */
+img {     
+  max-height: 560px;     
+  max-width: 964px; 
+}
+
+.italic {
+  font-style: italic;
+}
+
+/* Modify slide title text */
+slide:not(.segue) h2{
+  font-family: 'Crete Round', Calibri, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: normal;
+  letter-spacing: 0px;
+  line-height: 1.2em;
+  color: #CC2904;
+}
+
+/* slide article & section css modification = normal lighter darkgrey */
+article p, article li, article li.build, section p, section li{
+  font-family: 'Fira Sans', Calibri, sans-serif;
+}
+
+slide.quote strong {
+  color: red;
+  font-family: 'Crete Round';
+  font-size: 1.5em;
+}
+
+p strong {
+  color: red;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+slide.quote q {
+  font-family: 'Crete Round', serif;
+  font-size: 48px;
+  line-height: 1.25em;
+}
+
+slide.bigger pre, slide.bigger p {
+  font-size: 32px;
+  line-height: 1.5em;
+}
+
+slide.smaller pre, slide.smaller p {
+  font-size: 22px;
+  line-height: 1.5em;
+}
+
+slide.dark q {
+  color: whitesmoke;
+}
+
+li.tab::before{
+  content: ""
+}
+
+.rglWebGL {
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+slide.centrepre pre {
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  left: 0;
+  padding: 10px 0 10px 0;
+}
+
+slide.centrepre code {
+  /*font-size: 22px;*/
+}
+
+#demo1-create pre{
+  width: 90%;
+}
+
+#demo1-create code{
+  font-size: 18px;
+  line-height: 28px;
+}
+
+slides.layout-widescreen > slide.backdrop{
+  background: white;
+}
+
+#interactive-quiz pre{
+  line-height: 1.2em;
+}
