@@ -12,6 +12,13 @@ img {
   font-style: italic;
 }
 
+.footnote {
+    color: #888888;
+    font-size: 22px;
+    position: fixed; top: 90%;
+    text-align:left; width:100%;
+}
+
 /* Modify slide title text */
 slide:not(.segue) h2{
   font-family: 'Crete Round', Calibri, sans-serif;
@@ -24,8 +31,14 @@ slide:not(.segue) h2{
   color: #CC2904;
 }
 
+slide.listsmall ul li {
+    font-size: 22px;
+    line-height: 1.5em;
+    margin-bottom: 0;
+}
+
 /* slide article & section css modification = normal lighter darkgrey */
-article p, article li, article li.build, section p, section li{
+article p, article li, article li.build, section p, section li {
   font-family: 'Fira Sans', Calibri, sans-serif;
 }
 

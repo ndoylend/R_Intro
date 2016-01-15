@@ -62,6 +62,10 @@ R is also:
   <img height='500', alt='Excel Screenshot', src='assets/img/Excel_Screenshot.png' />
 </div>
 
+*** =pnotes
+
+Working with Excel and LibreOffice became quite a chore.
+
 ---
 
 ## Then
@@ -70,6 +74,10 @@ R is also:
   <img height='500', alt='R Screenshot', src='assets/img/R_Screenshot.png' />
 </div>
 
+*** =pnotes
+
+I discovered R, in all its command line glory.
+
 ---
 
 ## Finally
@@ -77,6 +85,10 @@ R is also:
 <div style='text-align: center;'>
   <img height='500', alt='RStudio Screenshot', src='assets/img/RStudio_Screenshot.png' />
 </div>
+
+*** =pnotes
+
+I began using RStudio and haven't looked back since. 
 
 ---
 
@@ -91,20 +103,29 @@ R is also:
 
 ## Caveats
 
-Like many things in life, you get out what you put in. The learning curve may be steep at first, but perseverance pays dividends. In particular, it's worth remembering that:
+Like many things in life, you get out what you put in. The learning curve may be steep\* at first, but perseverance pays dividends. In particular, it's worth remembering that:
 
 * R is not a spreadsheet; get used to not seeing columns of numbers
 * R is not GUI driven; get used to typing (and having more control)
 * R is not a tidy language; get used to idiosyncrasy (or stick with Python)
+
+<span class="footnote">\* or should that be 'shallow' ;)</span>
+
+--- {class: segue, bg: white}
+
+## Let's Take a Look
 
 --- &twocol
 
 ## The Basics
 
 *** =left
+
 ```{r basics}
 # assignment
 x <- 5
+
+x + 1
 
 # functions
 f <- function (x){
@@ -115,12 +136,14 @@ f(5)
 ```
 
 *** =right
+
 <center>
-  <img height='375', alt='Vintage Calculator', src='assets/img/HP_35_Calculator.jpg' />
+  <img height='470', alt='Busicom 120DN', src='assets/img/Busicom_120DN.jpg' />
 </center>
 
 *** =fullwidth
-Fantastic, so R can be used as a handy replacement for your vintage pocket calculator!
+
+Fantastic, so R makes handy replacement for your vintage pocket calculator!
 
 ---
 
@@ -157,7 +180,7 @@ Most functions in R are vectorised in some way; they either perform the same ope
 
 ## Built-In Datasets
 
-R comes with many built-in datasets to experiment with. The `mtcars` dataset was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973–74 models).
+R comes with many built-in datasets to experiment with. The `mtcars` dataset was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles.
 
 ```{r}
 # let's see the structure of the first four variables in the dataset
@@ -230,7 +253,7 @@ But what about summarising for all months? There are a number of ways to do this
 
 ```{r}
 aggregate(list(DBT = data$DBT),
-          b = list(Month = data$month),
+          by = list(Month = data$month),
           FUN = mean, na.rm = TRUE)
 ```
 
@@ -435,7 +458,7 @@ R-help Mailing List <https://stat.ethz.ch/mailman/listinfo/r-help>
 
 Of the two, stack<b>overflow</b> is probably the friendliest. While R-help can be a good way of getting help from seasoned R experts and developers, naïve questioners are likely to get slapped around a bit.
   
-<img height='45', alt='R-Bloggers Logo', src='assets/img/R-Bloggers_Logo.png' /> R-Bloggers <http://www.r-bloggers.com/>
+<img height='45', alt='R-Bloggers Logo', src='assets/img/R-Bloggers_Logo.png' /> <http://www.r-bloggers.com/>
 
 The R-bloggers site aggregates content from over 500 R-related blogs. It's great for news, tutorials and general <span class='italic'>"I never realised you could do that with R"</span> inspiration.
 
@@ -453,7 +476,7 @@ A good book is also handy. The following have my recommendation:
 * Matloff, N. 2011 - The Art of R Programming
 * Kabacoff, R. 2015 - R in Action
 
----
+--- .listsmall
 
 ## Thanks for listening
 
@@ -461,4 +484,5 @@ Is there any cake left?
 
 <img height='400', alt='Or are there only crumbs?', src='assets/img/Crumbs.png' />
 
-Presentation built with Slidify <https://github.com/ramnathv/slidify>
+* Presentation available online <http://ndoylend.github.io/R_Intro/>
+* Built with Slidify <https://github.com/ramnathv/slidify>
